@@ -209,12 +209,16 @@ Calculadora calcu2= new Calculadora();
     calcu2.num2=b;
     calcu2.suma();
     texto3.setText(String.valueOf(calcu2.result));
+    texto1.setText(String.valueOf(calcu2.result));
+    texto2.setText(" ");
     }//GEN-LAST:event_SumaActionPerformed
 
     private void CosenoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CosenoActionPerformed
     double a=Double.parseDouble(texto1.getText());
     calcu2.cos(a);
     texto3.setText(String.valueOf(calcu2.result));
+    texto1.setText(String.valueOf(calcu2.result));
+    texto2.setText(" ");    
     }//GEN-LAST:event_CosenoActionPerformed
 
     private void MultiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MultiActionPerformed
@@ -224,6 +228,8 @@ Calculadora calcu2= new Calculadora();
     calcu2.num2=b;
     calcu2.multi();
     texto3.setText(String.valueOf(calcu2.result));
+    texto1.setText(String.valueOf(calcu2.result));
+    texto2.setText(" ");      
     }//GEN-LAST:event_MultiActionPerformed
 
     private void RestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RestaActionPerformed
@@ -232,7 +238,9 @@ Calculadora calcu2= new Calculadora();
     calcu2.num1=a;
     calcu2.num2=b;
     calcu2.resta();
-    texto3.setText(String.valueOf(calcu2.result));   
+    texto3.setText(String.valueOf(calcu2.result));
+    texto1.setText(String.valueOf(calcu2.result));
+    texto2.setText(" ");      
     }//GEN-LAST:event_RestaActionPerformed
 
     private void DiviActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DiviActionPerformed
@@ -242,7 +250,9 @@ Calculadora calcu2= new Calculadora();
     calcu2.num2=b;
     calcu2.divi();
     if(calcu2.bandera==true){
-    texto3.setText(String.valueOf(calcu2.result)); 
+    texto3.setText(String.valueOf(calcu2.result));
+    texto1.setText(String.valueOf(calcu2.result));
+    texto2.setText(" ");      
     } else if(calcu2.bandera==false){
     texto3.setText("ERROR");
     }//GEN-LAST:event_DiviActionPerformed
@@ -251,12 +261,16 @@ Calculadora calcu2= new Calculadora();
        double a=Double.parseDouble(texto1.getText());
     calcu2.sen(a);
     texto3.setText(String.valueOf(calcu2.result));
+    texto1.setText(String.valueOf(calcu2.result));
+    texto2.setText(" ");      
     }//GEN-LAST:event_SenoActionPerformed
 
     private void TangenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TangenteActionPerformed
        double a=Double.parseDouble(texto1.getText());
     calcu2.tan(a);
     texto3.setText(String.valueOf(calcu2.result));
+    texto1.setText(String.valueOf(calcu2.result));
+    texto2.setText(" ");  
     }//GEN-LAST:event_TangenteActionPerformed
 
     private void RaiznActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RaiznActionPerformed
@@ -267,6 +281,8 @@ Calculadora calcu2= new Calculadora();
     calcu2.raizn();
     if(calcu2.bandera==true){
     texto3.setText(String.valueOf(calcu2.result)); 
+    texto1.setText(String.valueOf(calcu2.result));
+    texto2.setText(" ");  
     } else if(calcu2.bandera==false){
     texto3.setText("ERROR");   
     }
@@ -282,6 +298,9 @@ Calculadora calcu2= new Calculadora();
     calcu2.num1=b;
     calcu2.num2=a;
     calcu2.pown();
+    texto3.setText(String.valueOf(calcu2.result)); 
+    texto1.setText(String.valueOf(calcu2.result));
+    texto2.setText(" ");  
     }//GEN-LAST:event_PotenciaActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -291,6 +310,8 @@ Calculadora calcu2= new Calculadora();
      calcu2.num2=b;
      calcu2.iva();
      texto3.setText(String.valueOf(calcu2.result));
+     texto1.setText(String.valueOf(calcu2.result));
+     texto2.setText(" ");      
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
